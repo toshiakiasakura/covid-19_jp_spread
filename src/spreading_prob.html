@@ -16445,7 +16445,8 @@ where $p_{i,j} = \frac{m_{i,j}}{N_j} $ and $m_{j,j} = N_j $ . <br>
 Dividing $\Delta t $ and taking the limit $\Delta t \rightarrow 0$ gives 
 $$
     \frac{dC_{i,t} }{dt}   = r\sum_j p_{i,j}C_{j,t-\Delta t}  , 
-$$</p>
+$$
+I converted this differential equations into stochastic ones, and simulate using gillespie algorithm.</p>
 
 </div>
 </div>
@@ -16457,7 +16458,7 @@ $$</p>
 <li>exponential growth rate : estimated here. </li>
 <li>累積報告感染者数 : 2020/01/15の初発例から 2020/02/27 までのデータ．arcgisより. "dt_main/case_summary.xlsx" <br> 
 <a href="https://jagjapan.maps.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce">https://jagjapan.maps.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce</a></li>
-<li>$ m_{i,j} $  : 飛行機を用いた移動者数/日．　ANAの航空データより. </li>
+<li>$ m_{i,j} $  : 飛行機を用いた移動者数/日．　ANAの航空データより. (can add more.) </li>
 <li>$ p_{i,j} $  : 1日ごとの県人口に対する飛行機を利用する人数の割合．"dt_main/prop.npy". </li>
 <li>$ N_i $  : 県別人口. H27年国勢調査より． "dt_main/pref_population.xlsx" </li>
 <li>都道府県別感染者数 : 2020/02/27時点でのデータ. arcgisより．"dt_main/case_20200227.xlsx". 　</li>
@@ -16725,7 +16726,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-simulation-using-Gillespie-algorithm#-gillespie-algorithm-is">2. simulation using Gillespie algorithm# gillespie algorithm is<a class="anchor-link" href="#2.-simulation-using-Gillespie-algorithm#-gillespie-algorithm-is">&#182;</a></h1><p>gillespie algorithm is implemented in the module "simGillespie.py"</p>
+<h1 id="2.-simulation-using-Gillespie-algorithm">2. simulation using Gillespie algorithm<a class="anchor-link" href="#2.-simulation-using-Gillespie-algorithm">&#182;</a></h1><p>gillespie algorithm is implemented in the module "simGillespie.py"</p>
 
 </div>
 </div>
